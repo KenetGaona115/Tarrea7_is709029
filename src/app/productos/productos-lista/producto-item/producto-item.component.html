@@ -1,0 +1,31 @@
+  <div class="media col-8 mt-2 border border-primary align-items-center ">
+    <a class="media-left" href="#">
+    <img class="rounded-circle" src="https://picsum.photos/50/50?image={{producto.id}}" alt="">
+    </a>
+  
+  
+    <div class="media-body ">
+    <h5>{{producto.nombre}}</h5>
+    <p>Marca: {{producto.marca}} </p>
+    <p>Costo: {{producto.precio}} </p>
+    </div>
+  
+    <div class="media-right ml-2">
+    <!-- EL BOTON DE SELECCIONAR DEBE APARECER solo en /productos -->
+    <div class="row">
+    <label class="btn btn-primary active">
+    <input type="checkbox" name="" id="" autocomplete="off" (click)="addItem()">
+    </label>
+    </div>
+    <div class="row">
+    <a name="" id="" class="btn btn-primary" href="#" role="button" (click)="info()"><i
+  class="fas fa-search "></i></a>
+    </div>
+    <!-- EL BOTON DE BORRAR SIGUIENTE SOLO DEBE APARECER EN CARRITO DE COMPRA -->
+    <div class="row mt-1">
+    <a name="" id="" class="btn btn-primary" href="#" role="button" (click)="deleteItem()"><i
+  class="fas fa-trash-alt "></i></a>
+    </div>
+    </div>
+  </div>
+ 
